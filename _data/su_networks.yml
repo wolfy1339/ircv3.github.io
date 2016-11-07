@@ -2,32 +2,32 @@
   note: >
     These networks are intended to test new IRCds and can also be used to test new client implementations of IRCv3 specifications.
   software:
-    - name: Charybdis Testnet
-      ircd-ver: charybdis-4-rc3
-      net-address:
-        link: ircs://irc.charybdis.io:6697/
-        display: irc.charybdis.io
-      link: http://www.charybdis.io/
-      support:
-        v3.1:
-          account-notify:
-          away-notify:
-          cap:
-          extended-join:
-          multi-prefix:
-          sasl:
-          starttls:
-        v3.2:
-          account-tag:
-          cap-notify:
-          cap:
-          chghost:
-          echo-message:
-          invite-notify:
-          monitor:
-          sasl:
-          server-time:
-          userhost-in-names:
+    # - name: Charybdis Testnet
+    #   ircd-ver: charybdis-4-rc3
+    #   net-address:
+    #     link: ircs://irc.charybdis.io:6697/
+    #     display: irc.charybdis.io
+    #   link: http://www.charybdis.io/
+    #   support:
+    #     v3.1:
+    #       account-notify:
+    #       away-notify:
+    #       cap:
+    #       extended-join:
+    #       multi-prefix:
+    #       sasl:
+    #       starttls:
+    #     v3.2:
+    #       account-tag:
+    #       cap-notify:
+    #       cap:
+    #       chghost:
+    #       echo-message:
+    #       invite-notify:
+    #       monitor:
+    #       sasl:
+    #       server-time:
+    #       userhost-in-names:
     - name: InspIRCd Testnet
       ircd-ver: InspIRCd-3.0
       net-address:
@@ -84,13 +84,18 @@
           multi-prefix:
           sasl:
     - name: Rizon
-      ircd-ver: plexus-3.1.0
+      ircd-ver: plexus-4
       net-address:
         link:  ircs://irc.rizon.net:6697/
         display: irc.rizon.net
       link: https://rizon.net/
       support:
         v3.1:
+          away-notify:
           cap:
           multi-prefix:
+          userhost-in-names:
+        v3.2:
+          chghost:
+          invite-notify:
           userhost-in-names:
